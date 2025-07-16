@@ -1,5 +1,21 @@
 # SecureChat - Production-Ready Real-Time Chat System
 
+[![C++](https://img.shields.io/badge/C%2B%2B-20-blue.svg?style=flat&logo=c%2B%2B)](https://isocpp.org/)
+[![CMake](https://img.shields.io/badge/CMake-3.20+-green.svg?style=flat&logo=cmake)](https://cmake.org/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg?style=flat&logo=docker)](https://www.docker.com/)
+[![OpenSSL](https://img.shields.io/badge/OpenSSL-Cryptography-red.svg?style=flat&logo=openssl)](https://www.openssl.org/)
+[![Qt](https://img.shields.io/badge/Qt-5.15+-green.svg?style=flat&logo=qt)](https://www.qt.io/)
+[![WebSocket](https://img.shields.io/badge/WebSocket-Protocol-orange.svg?style=flat)](https://tools.ietf.org/html/rfc6455)
+
+[![AES-256](https://img.shields.io/badge/AES-256-red.svg?style=flat)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
+[![RSA-2048](https://img.shields.io/badge/RSA-2048-red.svg?style=flat)](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
+[![TLS](https://img.shields.io/badge/TLS-1.3-green.svg?style=flat)](https://tools.ietf.org/html/rfc8446)
+[![TCP/UDP](https://img.shields.io/badge/Network-TCP%2FUDP-blue.svg?style=flat)](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue.svg?style=flat&logo=github-actions)](https://github.com/features/actions)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](LICENSE)
+
+> 🔐 **Enterprise-grade real-time messaging platform** with military-grade AES-256/RSA-2048 encryption, secure TCP/UDP networking, and cross-platform Qt5 client. Built with modern C++20 for production environments.
+
 A complete, high-performance real-time chat system featuring a secure C++ server and modern Qt GUI client, with enterprise-grade security, sub-50ms message delivery, and support for 1000+ concurrent users.
 
 ## 🚀 Key Features
