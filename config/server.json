@@ -1,0 +1,135 @@
+{
+  "server": {
+    "port": 8080,
+    "bind_address": "0.0.0.0",
+    "max_connections": 1000,
+    "worker_threads": 0,
+    "backlog": 128,
+    "keepalive_timeout": 300,
+    "client_timeout": 60
+  },
+  "security": {
+    "enable_tls": true,
+    "tls_cert_file": "certs/server.crt",
+    "tls_key_file": "certs/server.key",
+    "tls_ca_file": "certs/ca.crt",
+    "require_client_cert": false,
+    "cipher_suites": [
+      "ECDHE-RSA-AES256-GCM-SHA384",
+      "ECDHE-RSA-AES128-GCM-SHA256",
+      "ECDHE-RSA-CHACHA20-POLY1305"
+    ],
+    "min_tls_version": "1.3",
+    "perfect_forward_secrecy": true,
+    "key_rotation_interval": 1800,
+    "session_timeout": 3600
+  },
+  "encryption": {
+    "algorithm": "AES-256-GCM",
+    "key_derivation": "PBKDF2",
+    "iterations": 100000,
+    "salt_length": 32,
+    "enable_compression": true,
+    "compression_level": 6
+  },
+  "authentication": {
+    "enable_jwt": true,
+    "jwt_secret": "your-256-bit-secret-key-here",
+    "jwt_expiry": 3600,
+    "enable_oauth2": false,
+    "oauth2_providers": {
+      "google": {
+        "client_id": "",
+        "client_secret": "",
+        "redirect_uri": ""
+      }
+    },
+    "rate_limiting": {
+      "login_attempts": 5,
+      "lockout_duration": 300,
+      "window_size": 900
+    }
+  },
+  "performance": {
+    "io_model": "epoll",
+    "buffer_size": 8192,
+    "max_message_size": 1048576,
+    "message_queue_size": 1000,
+    "enable_zero_copy": true,
+    "enable_tcp_nodelay": true,
+    "enable_tcp_fastopen": true,
+    "socket_recv_buffer": 65536,
+    "socket_send_buffer": 65536
+  },
+  "rate_limiting": {
+    "messages_per_second": 100,
+    "burst_size": 200,
+    "connection_rate": 10,
+    "bandwidth_limit": 1048576
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/securechat.log",
+    "max_file_size": 104857600,
+    "max_files": 10,
+    "enable_console": true,
+    "enable_async": true,
+    "structured": true,
+    "include_source_location": true
+  },
+  "monitoring": {
+    "enable_metrics": true,
+    "metrics_port": 9090,
+    "metrics_path": "/metrics",
+    "health_check_port": 8081,
+    "health_check_path": "/health",
+    "enable_profiling": false,
+    "profiling_port": 6060
+  },
+  "database": {
+    "type": "postgresql",
+    "host": "localhost",
+    "port": 5432,
+    "database": "securechat",
+    "username": "securechat",
+    "password": "your-db-password",
+    "pool_size": 20,
+    "connection_timeout": 30,
+    "enable_ssl": true
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379,
+    "password": "",
+    "database": 0,
+    "pool_size": 10,
+    "connection_timeout": 5,
+    "enable_cluster": false
+  },
+  "features": {
+    "enable_file_transfer": true,
+    "max_file_size": 104857600,
+    "allowed_file_types": [
+      "image/jpeg",
+      "image/png",
+      "image/gif",
+      "text/plain",
+      "application/pdf"
+    ],
+    "enable_message_history": true,
+    "history_retention_days": 30,
+    "enable_user_presence": true,
+    "enable_typing_indicators": true,
+    "enable_read_receipts": true,
+    "enable_push_notifications": false
+  },
+  "plugins": {
+    "directory": "plugins",
+    "auto_load": true,
+    "enabled_plugins": [
+      "message_filter",
+      "spam_detection",
+      "profanity_filter"
+    ]
+  }
+}

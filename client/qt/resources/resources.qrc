@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+    <qresource prefix="/">
+        <!-- Application Icons -->
+        <file>icons/app-icon.png</file>
+        <file>icons/app-logo.png</file>
+        
+        <!-- Menu and Toolbar Icons -->
+        <file>icons/connect.png</file>
+        <file>icons/disconnect.png</file>
+        <file>icons/login.png</file>
+        <file>icons/logout.png</file>
+        <file>icons/register.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/export.png</file>
+        <file>icons/import.png</file>
+        <file>icons/clear.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/about.png</file>
+        <file>icons/help.png</file>
+        <file>icons/qt.png</file>
+        
+        <!-- Chat Icons -->
+        <file>icons/send.png</file>
+        <file>icons/attach.png</file>
+        <file>icons/emoji.png</file>
+        <file>icons/image.png</file>
+        <file>icons/file.png</file>
+        <file>icons/audio.png</file>
+        <file>icons/video.png</file>
+        
+        <!-- Status Icons -->
+        <file>icons/online.png</file>
+        <file>icons/away.png</file>
+        <file>icons/busy.png</file>
+        <file>icons/offline.png</file>
+        <file>icons/typing.png</file>
+        
+        <!-- Message Status Icons -->
+        <file>icons/pending.png</file>
+        <file>icons/sent.png</file>
+        <file>icons/delivered.png</file>
+        <file>icons/read.png</file>
+        <file>icons/failed.png</file>
+        
+        <!-- Security Icons -->
+        <file>icons/encrypted.png</file>
+        <file>icons/unencrypted.png</file>
+        <file>icons/key.png</file>
+        <file>icons/lock.png</file>
+        <file>icons/unlock.png</file>
+        
+        <!-- UI Icons -->
+        <file>icons/eye-open.png</file>
+        <file>icons/eye-closed.png</file>
+        <file>icons/show.png</file>
+        <file>icons/hide.png</file>
+        <file>icons/minimize.png</file>
+        <file>icons/maximize.png</file>
+        <file>icons/close.png</file>
+        <file>icons/refresh.png</file>
+        <file>icons/search.png</file>
+        <file>icons/filter.png</file>
+        <file>icons/sort.png</file>
+        <file>icons/copy.png</file>
+        <file>icons/paste.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/edit.png</file>
+        <file>icons/save.png</file>
+        <file>icons/cancel.png</file>
+        <file>icons/ok.png</file>
+        <file>icons/warning.png</file>
+        <file>icons/error.png</file>
+        <file>icons/info.png</file>
+        <file>icons/question.png</file>
+        <file>icons/test.png</file>
+        
+        <!-- System Tray Icons -->
+        <file>icons/tray-online.png</file>
+        <file>icons/tray-offline.png</file>
+        <file>icons/tray-message.png</file>
+        
+        <!-- Default Avatars -->
+        <file>avatars/default-user.png</file>
+        <file>avatars/default-group.png</file>
+        
+        <!-- Themes -->
+        <file>themes/light.qss</file>
+        <file>themes/dark.qss</file>
+        
+        <!-- Sounds -->
+        <file>sounds/message-received.wav</file>
+        <file>sounds/message-sent.wav</file>
+        <file>sounds/user-joined.wav</file>
+        <file>sounds/user-left.wav</file>
+        <file>sounds/notification.wav</file>
+        
+        <!-- Fonts -->
+        <file>fonts/NotoEmoji-Regular.ttf</file>
+        
+        <!-- Translations -->
+        <file>translations/securechat_en.qm</file>
+        <file>translations/securechat_es.qm</file>
+        <file>translations/securechat_fr.qm</file>
+        <file>translations/securechat_de.qm</file>
+        <file>translations/securechat_zh.qm</file>
+        <file>translations/securechat_ja.qm</file>
+        <file>translations/securechat_ru.qm</file>
+    </qresource>
+</RCC>
